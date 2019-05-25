@@ -48,6 +48,9 @@
       <find>nav</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -57,12 +60,13 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="400" />
     <option name="y" value="40" />
     <option name="width" value="1310" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -142,17 +146,18 @@
       <workItem from="1558370890293" duration="815000" />
       <workItem from="1558376990082" duration="6000" />
       <workItem from="1558377017020" duration="6000" />
+      <workItem from="1558816884153" duration="477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15261000" />
+    <option name="totallyTimeSpent" value="15738000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="320" y="32" width="1048" height="832" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24564797" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16536458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
