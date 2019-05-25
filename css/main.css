@@ -1,0 +1,174 @@
+body {
+    margin:0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat;
+}
+.header-body {
+    background: url("../img/header-back.png") no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    width: 95vw;
+    height: 100vh;
+}
+.header-body {
+    display: flex;
+    justify-content: space-between;
+}
+.blow {
+    grid-area:blow;
+    margin:5%;
+    font-size:40px;
+    font-weight: 900;
+}
+.menushka {
+    margin:5%;
+    grid-area: menu;
+}
+.h-menu {
+    display: flex;
+    text-align: center;
+    font-size:22px;
+    justify-content: space-around;
+}
+.h-menu a{
+    margin: 15px;
+    padding:5px 10px;
+}
+.h-menu a:hover,
+.h-menu a:focus {
+    color: white;
+    background: black;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+.explore {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+}
+.explore:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+.explore a{
+    color: white;
+    background: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding:10px 45px;
+    box-shadow: 0 30px 50px 10px black;
+}
+.left-head {
+    background: #e0e0e0;
+    height: 100vh;
+    width: 5vw;
+    position:relative;
+}
+.left-h-body b{
+    color:black;
+}
+.left-h-body {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-top:300px;
+    white-space: nowrap;
+    color: #b3b3b3;
+    font-size: 22px;
+    transform: rotate(270deg);
+}
+.l-h-img {
+    left:20%;
+    bottom: 2%;
+    position:absolute;
+    width: 60%;
+}
+#menu-checkbox {
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+
+    .h-menu {
+        display: none
+    }
+    .h-menu div{
+        width: 100%;
+        display: block;
+    }
+    .h-menu a{
+        color: black;
+        border: 1px solid #bfbfbf;
+        font-weight: bold;
+        background: #e0e0e0;
+        border-radius: 25px;
+        transition: 0.2s;
+        display: block;
+        padding: 8px;
+    }
+    .toggle-button {
+        margin: 10% 40px;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 10px;
+        box-shadow: 0 30px 50px 2px black;
+        background: black;
+    }
+    .toggle-button:after {
+        content: attr(data-open);
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .h-menu{
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+        content: attr(data-close);
+    }
+
+    .explore {
+        left:15%;
+    }
+    .l-h-img {
+        left:2%;
+        width: 96%;
+    }
+    .left-h-body {
+        font-size: 15px;
+    }
+}
+@media (min-width: 400px) and (max-width: 700px){
+    .explore {
+        left: 30%;
+    }
+}
+@media screen and (max-width: 360px){
+    .header-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:40px 100px;
+        grid-template-areas: "blow"
+        "menu";
+    }
+    .explore {
+        left:13%;
+    }
+    .explore a{
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+    .blow {
+        text-align: center;
+    }
+}
+
